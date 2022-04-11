@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="player">
+  
+        <!-- Define the section for displaying details -->
+        <div class="details">
+          <div class="now-playing">PLAYING 3 OF 3</div>
+        
+          <div class="music-container">
+              <h2>Ukulele</h2>
+              <h3>Benjamin Tissot</h3>
+              <div class ="img_container">
+                <img src ="ukulele.jpg" alt="picr"/>
+              </div>
+              
+              <audio controls>
+              
+                <source src="bensound-ukulele.mp3" type="audio/mpeg">
+              
+              </audio>
+              <!-- Define the section for displaying track buttons -->
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()">
+        <i class="fa fa-step-backward fa"></i>
+      </div>
+      <div class="playpause-track" onclick="playpauseTrack()">
+        <i class="fa fa-play-circle fa"></i>
+      </div>
+      <div class="next-track" onclick="nextTrack()">
+        <i class="fa fa-step-forward fa"></i>
+      </div>
+    </div>
+    <!-- Define the section for displaying the seek slider-->
+     <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100"
+        value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration">02:26</div>
+    </div>
+  
+    <!-- Define the section for displaying the volume slider-->
+    <div class="slider_container">
+      <i class="fa fa-volume-down"></i>
+      <input type="range" min="1" max="100"
+        value="99" class="volume_slider" onchange="setVolume()">
+      <i class="fa fa-volume-up"></i>
+    </div>
+  </div>
+   -->
+          
+          controls
+          <div class ="music_controls">
+            <i class="fa-solid fa-backward" id="prev" title="previous"></i>
+            <i class ="fa-solid fa-play" id ="play" title="Play"></i>
+            <i class ="fa-solid fa-forward" id ="next" title="Next"></i>
+          </div>  -->
+
+      
+    <script src="./scripts/validation.js"></script> -->
+
+       
+    
+</body>
+</html>
